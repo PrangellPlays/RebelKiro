@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "C C",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:stripped_cherry_log"
+    }
+  },
+  "result": {
+    "item": "rl:stripped_cherry_hollow_log",
+    "count": 6
+  }
+}

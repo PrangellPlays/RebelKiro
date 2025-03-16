@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "W W",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:stripped_warped_log"
+    }
+  },
+  "result": {
+    "item": "rl:stripped_warped_hollow_log",
+    "count": 6
+  }
+}

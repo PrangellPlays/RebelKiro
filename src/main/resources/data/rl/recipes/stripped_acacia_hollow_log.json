@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "A A",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stripped_acacia_log"
+    }
+  },
+  "result": {
+    "item": "rl:stripped_acacia_hollow_log",
+    "count": 6
+  }
+}

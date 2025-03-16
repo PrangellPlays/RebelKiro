@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OOO",
+    "O O",
+    "OOO"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:stripped_oak_log"
+    }
+  },
+  "result": {
+    "item": "rl:stripped_oak_hollow_log",
+    "count": 6
+  }
+}

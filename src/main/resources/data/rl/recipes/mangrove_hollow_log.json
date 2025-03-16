@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "M M",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:mangrove_log"
+    }
+  },
+  "result": {
+    "item": "rl:mangrove_hollow_log",
+    "count": 6
+  }
+}

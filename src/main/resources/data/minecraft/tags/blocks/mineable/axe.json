@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "rl:large_item_frame",
+    "rl:oak_hollow_log",
+    "rl:stripped_oak_hollow_log",
+    "rl:spruce_hollow_log",
+    "rl:stripped_spruce_hollow_log",
+    "rl:birch_hollow_log",
+    "rl:stripped_birch_hollow_log",
+    "rl:jungle_hollow_log",
+    "rl:stripped_jungle_hollow_log",
+    "rl:acacia_hollow_log",
+    "rl:stripped_acacia_hollow_log",
+    "rl:dark_oak_hollow_log",
+    "rl:stripped_dark_oak_hollow_log",
+    "rl:crimson_hollow_stem",
+    "rl:stripped_crimson_hollow_stem",
+    "rl:warped_hollow_stem",
+    "rl:stripped_warped_hollow_stem",
+    "rl:mangrove_hollow_log",
+    "rl:stripped_mangrove_hollow_log",
+    "rl:cherry_hollow_log",
+    "rl:stripped_cherry_hollow_log"
+  ]
+}

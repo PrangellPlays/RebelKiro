@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "rl",
+	"version": "${version}",
+	"name": "Rebel Legacy: Kiro",
+	"description": "Rebel Legacy Modded server. Based in the Kiro Universe. The center.",
+	"authors": [
+		"PrangellPlays"
+	],
+	"contributors": [
+		"Skynovic",
+		"Lumina Eclipse",
+		"He Just wants to be there - PotatoBoy24"
+	],
+	"license": "All Rights Reserved",
+	"icon": "assets/rl/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.luminaeclipse.rl.RL"
+		],
+		"client": [
+			"dev.luminaeclipse.rl.RLClient"
+		],
+		"modmenu": [
+			"dev.luminaeclipse.rl.config.ModMenuCompat"
+		]
+	},
+	"mixins": [
+		"rl.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"midnightlib": "*",
+		"geckolib": ">=4.4.6"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}

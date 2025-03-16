@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "JJJ",
+    "J J",
+    "JJJ"
+  ],
+  "key": {
+    "J": {
+      "item": "minecraft:stripped_jungle_log"
+    }
+  },
+  "result": {
+    "item": "rl:stripped_jungle_hollow_log",
+    "count": 6
+  }
+}
