@@ -1,6 +1,7 @@
 package dev.luminaeclipse.rl.util;
 
 import dev.luminaeclipse.rl.RL;
+import dev.luminaeclipse.rl.init.RLBlockEntities;
 import dev.luminaeclipse.rl.init.RLBlocks;
 import dev.luminaeclipse.rl.init.RLItemGroups;
 import dev.luminaeclipse.rl.init.RLItems;
@@ -14,6 +15,7 @@ import net.minecraft.client.render.RenderLayer;
 public class RLRegistries {
     public static void init() {
         RLBlocks.init();
+        RLBlockEntities.init();
         RLItems.init();
         RLItemGroups.init();
         RLTags.init();

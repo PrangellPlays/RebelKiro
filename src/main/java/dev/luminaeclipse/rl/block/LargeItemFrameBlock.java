@@ -1,36 +1,40 @@
 package dev.luminaeclipse.rl.block;
 
+import dev.luminaeclipse.rl.block.entity.LargeItemFrameBlockEntity;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.ai.pathing.NavigationType;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.state.property.Property;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import org.jetbrains.annotations.Nullable;
 
-public class LargeItemFrameBlock extends FacingBlock implements Waterloggable {
+public class LargeItemFrameBlock extends BlockWithEntity implements Waterloggable {
+    public static final DirectionProperty FACING;
     public static final BooleanProperty WATERLOGGED;
     public static final VoxelShape NORTH_SHAPE;
-    public static final VoxelShape NORTH_COLLISION_SHAPE;
     public static final VoxelShape EAST_SHAPE;
-    public static final VoxelShape EAST_COLLISION_SHAPE;
     public static final VoxelShape SOUTH_SHAPE;
-    public static final VoxelShape SOUTH_COLLISION_SHAPE;
     public static final VoxelShape WEST_SHAPE;
-    public static final VoxelShape WEST_COLLISION_SHAPE;
     public static final VoxelShape UP_SHAPE;
-    public static final VoxelShape UP_COLLISION_SHAPE;
     public static final VoxelShape DOWN_SHAPE;
-    public static final VoxelShape DOWN_COLLISION_SHAPE;
 
     public LargeItemFrameBlock(Settings settings) {
         super(settings);
@@ -44,12 +48,12 @@ public class LargeItemFrameBlock extends FacingBlock implements Waterloggable {
     public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         Direction direction = state.get(FACING);
         return switch (direction) {
-            case DOWN -> DOWN_COLLISION_SHAPE;
-            case UP -> UP_COLLISION_SHAPE;
-            case NORTH -> NORTH_COLLISION_SHAPE;
-            case EAST -> EAST_COLLISION_SHAPE;
-            case SOUTH -> SOUTH_COLLISION_SHAPE;
-            case WEST -> WEST_COLLISION_SHAPE;
+            case DOWN -> DOWN_SHAPE;
+            case UP -> UP_SHAPE;
+            case NORTH -> NORTH_SHAPE;
+            case EAST -> EAST_SHAPE;
+            case SOUTH -> SOUTH_SHAPE;
+            case WEST -> WEST_SHAPE;
         };
     }
 
@@ -92,19 +96,52 @@ public class LargeItemFrameBlock extends FacingBlock implements Waterloggable {
         return false;
     }
 
+    @Override
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        BlockEntity blockEntity = world.getBlockEntity(pos);
+        if (blockEntity instanceof LargeItemFrameBlockEntity) {
+            LargeItemFrameBlockEntity largeItemFrame = (LargeItemFrameBlockEntity) blockEntity;
+            if (largeItemFrame.isEmpty()) {
+                ItemStack itemStack = player.getStackInHand(hand);
+                if (itemStack.isEmpty()) {
+                    return ActionResult.CONSUME;
+                }
+                largeItemFrame.setStack(0, itemStack);
+                world.getBlockEntity(pos).toUpdatePacket();
+                player.getStackInHand(hand).decrement(64);
+                return ActionResult.success(world.isClient());
+            } else {
+                ItemStack itemStack = largeItemFrame.getStack(0);
+                if (!itemStack.isEmpty()) {
+                    player.giveItemStack(itemStack);
+                    largeItemFrame.removeStack(0);
+                    world.getBlockEntity(pos).toUpdatePacket();
+                    return ActionResult.success(world.isClient());
+                }
+                return ActionResult.FAIL;
+            }
+        }
+        return ActionResult.PASS;
+    }
+
+    @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
+    }
+
+    @Override
+    public @Nullable BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new LargeItemFrameBlockEntity(pos, state);
+    }
+
     static {
+        FACING = Properties.FACING;
         WATERLOGGED = Properties.WATERLOGGED;
-        NORTH_SHAPE = Block.createCuboidShape(0.0, 0.0, 12.0, 16.0, 16.0, 16.0);
-        NORTH_COLLISION_SHAPE = Block.createCuboidShape(0.0, 0.0, 15.0, 16.0, 16.0, 16.0);
-        EAST_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 4.0, 16.0, 16.0);
-        EAST_COLLISION_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 1.0, 16.0, 16.0);
-        SOUTH_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 4.0);
-        SOUTH_COLLISION_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 1.0);
-        WEST_SHAPE = Block.createCuboidShape(12.0, 0.0, 0.0, 16.0, 16.0, 16.0);
-        WEST_COLLISION_SHAPE = Block.createCuboidShape(15.0, 0.0, 0.0, 16.0, 16.0, 16.0);
-        UP_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 4.0, 16.0);
-        UP_COLLISION_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 1.0, 16.0);
-        DOWN_SHAPE = Block.createCuboidShape(0.0, 12.0, 0.0, 16.0, 16.0, 16.0);
-        DOWN_COLLISION_SHAPE = Block.createCuboidShape(0.0, 15.0, 0.0, 16.0, 16.0, 16.0);
+        NORTH_SHAPE = Block.createCuboidShape(0.0, 0.0, 13.0, 16.0, 16.0, 16.0);
+        EAST_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 3.0, 16.0, 16.0);
+        SOUTH_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 3.0);
+        WEST_SHAPE = Block.createCuboidShape(13.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+        UP_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 3.0, 16.0);
+        DOWN_SHAPE = Block.createCuboidShape(0.0, 13.0, 0.0, 16.0, 16.0, 16.0);
     }
 }
