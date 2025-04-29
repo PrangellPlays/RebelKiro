@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "rl",
+	"id": "kiro",
 	"version": "${version}",
-	"name": "Rebel Legacy: Kiro",
-	"description": "Rebel Legacy Modded server. Based in the Kiro Universe. The center.",
+	"name": "Kiro",
+	"description": "Kiro Modded server. Based in the Kiro Universe. The center.",
 	"authors": [
 		"PrangellPlays"
 	],
@@ -13,21 +13,24 @@
 		"He Just wants to be there - PotatoBoy24"
 	],
 	"license": "All Rights Reserved",
-	"icon": "assets/rl/icon.png",
+	"icon": "assets/kiro/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dev.luminaeclipse.rl.RL"
+          "dev.luminaeclipse.kiro.Kiro"
 		],
 		"client": [
-			"dev.luminaeclipse.rl.RLClient"
+			"dev.luminaeclipse.kiro.KiroClient"
 		],
 		"modmenu": [
-			"dev.luminaeclipse.rl.config.ModMenuCompat"
+			"dev.luminaeclipse.kiro.config.ModMenuCompat"
+		],
+		"cardinal-components": [
+			"dev.luminaeclipse.kiro.init.KiroComponents"
 		]
 	},
 	"mixins": [
-		"rl.mixins.json"
+		"kiro.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
@@ -39,5 +42,10 @@
 	},
 	"suggests": {
 		"modmenu": "*"
+	},
+	"custom": {
+		"cardinal-components": [
+			"kiro:currency"
+		]
 	}
 }

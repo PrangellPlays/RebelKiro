@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "kiro:block/collector_mark",
+      "x": 270
+    },
+    "facing=east": {
+      "model": "kiro:block/collector_mark",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "kiro:block/collector_mark",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "kiro:block/collector_mark"
+    },
+    "facing=up": {
+      "model": "kiro:block/collector_mark",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "kiro:block/collector_mark",
+      "y": 90
+    }
+  }
+}

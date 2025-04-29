@@ -1,0 +1,7 @@
+{
+  "parent": "kiro:block/branch_inventory_template",
+  "textures": {
+    "top": "kiro:block/branch/mangrove/mangrove_branch_top",
+    "side": "minecraft:block/mangrove_log"
+  }
+}

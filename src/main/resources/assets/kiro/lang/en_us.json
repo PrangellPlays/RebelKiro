@@ -1,0 +1,106 @@
+{
+  "__Comment": "Items",
+  "item.kiro.kiro_shard": "Kiro Shard",
+  "item.kiro.fractured_kiro_shard": "Fractured Kiro Shard",
+  "item.kiro.kiro_shard.desc_k": "Reality: Kiro",
+  "item.kiro.kiro_shard.desc_rs": "Reality: Rebel SMP",
+  "item.kiro.kiro_shard.desc_v": "Reality: Void",
+  "item.kiro.kiro_shard.desc_kiro": "Reality: Rebel Legacy",
+  "item.kiro.kiro_shard.desc_v0": "Reality: Vault 0",
+  "item.kiro.kiro_shard.desc_a": "Reality: Aetheris",
+
+  "item.kiro.potato_hoe": "Potato Hoe",
+  "item.kiro.vortix": "Vortix",
+  "item.kiro.katana": "Katana",
+  "item.kiro.silent_boots": "Boots of the Silent Step",
+
+  "item.kiro.shirasteel_plate": "ShiraSteel Plate",
+  "item.kiro.shirasteel_keycard_1": "ShiraSteel Keycard lvl 1",
+  "item.kiro.shirasteel_keycard_2": "ShiraSteel Keycard lvl 2",
+  "item.kiro.shirasteel_keycard_3": "ShiraSteel Keycard lvl 3",
+  "item.kiro.shirasteel_keycard_master": "Master ShiraSteel Keycard",
+
+  "item.kiro.void_ingot": "Void Ingot",
+  "item.kiro.void_crystal": "Void Crystal",
+
+  "item.kiro.throwing_dagger": "Throwing Dagger",
+
+  "item.kiro.debug_rank_item": "Rank Debug Item",
+
+  "__Comment": "Blocks",
+  "block.kiro.collector_mark": "Collector's Mark",
+  "block.kiro.glass_panel": "Glass Panel",
+  "block.kiro.moss_layer": "Layered Moss",
+  "block.kiro.snow_layer": "Layered Snow",
+  "block.kiro.large_item_frame": "Large Item Frame",
+
+  "block.kiro.acacia_hollow_log": "Hollow Acacia Log",
+  "block.kiro.stripped_acacia_hollow_log": "Hollow Stripped Acacia Log",
+  "block.kiro.birch_hollow_log": "Hollow Birch Log",
+  "block.kiro.stripped_birch_hollow_log": "Hollow Stripped Birch Log",
+  "block.kiro.cherry_hollow_log": "Hollow Cherry Log",
+  "block.kiro.stripped_cherry_hollow_log": "Hollow Stripped Cherry Log",
+  "block.kiro.crimson_hollow_stem": "Hollow Crimson Stem",
+  "block.kiro.stripped_crimson_hollow_stem": "Hollow Stripped Crimson Stem",
+  "block.kiro.dark_oak_hollow_log": "Hollow Dark Oak Log",
+  "block.kiro.stripped_dark_oak_hollow_log": "Hollow Stripped Dark Oak Log",
+  "block.kiro.jungle_hollow_log": "Hollow Jungle Log",
+  "block.kiro.stripped_jungle_hollow_log": "Hollow Stripped Jungle Log",
+  "block.kiro.mangrove_hollow_log": "Hollow Mangrove Log",
+  "block.kiro.stripped_mangrove_hollow_log": "Hollow Stripped Mangrove Log",
+  "block.kiro.oak_hollow_log": "Hollow Oak Log",
+  "block.kiro.stripped_oak_hollow_log": "Hollow Stripped Oak Log",
+  "block.kiro.spruce_hollow_log": "Hollow Spruce Log",
+  "block.kiro.stripped_spruce_hollow_log": "Hollow Stripped Spruce Log",
+  "block.kiro.warped_hollow_stem": "Hollow Warped Stem",
+  "block.kiro.stripped_warped_hollow_stem": "Hollow Stripped Warped Stem",
+
+  "block.kiro.acacia_branch": "Acacia Branch",
+  "block.kiro.stripped_acacia_branch": "Stripped Acacia Branch",
+  "block.kiro.birch_branch": "Birch Branch",
+  "block.kiro.stripped_birch_branch": "Stripped Birch Branch",
+  "block.kiro.cherry_branch": "Cherry Branch",
+  "block.kiro.stripped_cherry_branch": "Stripped Cherry Branch",
+  "block.kiro.crimson_branch": "Crimson Branch",
+  "block.kiro.stripped_crimson_branch": "Stripped Crimson Branch",
+  "block.kiro.dark_oak_branch": "Dark Oak Branch",
+  "block.kiro.stripped_dark_oak_branch": "Stripped Dark Oak Branch",
+  "block.kiro.jungle_branch": "Jungle Branch",
+  "block.kiro.stripped_jungle_branch": "Stripped Jungle Branch",
+  "block.kiro.mangrove_branch": "Mangrove Branch",
+  "block.kiro.stripped_mangrove_branch": "Stripped Mangrove Branch",
+  "block.kiro.oak_branch": "Oak Branch",
+  "block.kiro.stripped_oak_branch": "Stripped Oak Branch",
+  "block.kiro.spruce_branch": "Spruce Branch",
+  "block.kiro.stripped_spruce_branch": "Stripped Spruce Branch",
+  "block.kiro.warped_branch": "Warped Branch",
+  "block.kiro.stripped_warped_branch": "Stripped Warped Branch",
+
+  "block.kiro.brazier": "Brazier",
+
+  "__Comment": "Item Group",
+  "itemgroup.kiro.items": "Rebel Legacy: Kiro",
+
+  "__Comment": "Subtitles",
+
+
+  "__Comment": "Death Message",
+
+
+  "__Comment": "Status Effect",
+
+
+  "__Comment": "Entity",
+
+
+  "__Comment": "Particles",
+
+
+  "__Comment": "Key Binding",
+  "category.kiro": "Kiro",
+
+  "__Comment": "Config",
+  "kiro.midnightconfig.title": "Kiro",
+  "kiro.midnightconfig.category.kiro": "Kiro",
+  "kiro.midnightconfig.enableMod": "Enable Mod"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "kiro:block/branch_inventory_template",
+  "textures": {
+    "top": "kiro:block/branch/warped/warped_branch_top",
+    "side": "minecraft:block/warped_stem"
+  }
+}

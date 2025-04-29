@@ -1,0 +1,7 @@
+{
+  "parent": "kiro:block/branch_top_template",
+  "textures": {
+    "top": "kiro:block/branch/spruce/spruce_branch_top",
+    "side": "minecraft:block/spruce_log"
+  }
+}

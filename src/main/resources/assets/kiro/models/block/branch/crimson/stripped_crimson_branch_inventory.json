@@ -1,0 +1,7 @@
+{
+  "parent": "kiro:block/branch_inventory_template",
+  "textures": {
+    "top": "kiro:block/branch/crimson/stripped_crimson_branch_top",
+    "side": "minecraft:block/stripped_crimson_stem"
+  }
+}

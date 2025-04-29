@@ -1,0 +1,7 @@
+{
+  "parent": "kiro:block/template_glass_panel",
+  "textures": {
+    "panelEdge": "kiro:block/glass_panel_trim",
+    "panel": "kiro:block/glass_panel"
+  }
+}

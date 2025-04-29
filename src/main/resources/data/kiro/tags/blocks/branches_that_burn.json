@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "kiro:oak_branch",
+    "kiro:birch_branch",
+    "kiro:spruce_branch",
+    "kiro:jungle_branch",
+    "kiro:acacia_branch",
+    "kiro:dark_oak_branch",
+    "kiro:mangrove_branch",
+    "kiro:cherry_branch",
+    "kiro:stripped_oak_branch",
+    "kiro:stripped_birch_branch",
+    "kiro:stripped_spruce_branch",
+    "kiro:stripped_jungle_branch",
+    "kiro:stripped_acacia_branch",
+    "kiro:stripped_dark_oak_branch",
+    "kiro:stripped_mangrove_branch",
+    "kiro:stripped_cherry_branch"
+  ]
+}

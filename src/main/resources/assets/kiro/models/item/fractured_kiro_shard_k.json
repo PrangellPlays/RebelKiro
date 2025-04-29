@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kiro:item/kiro_shard/kiro_shard_k",
+    "layer1": "kiro:item/kiro_shard/kiro_shard_fracture"
+  }
+}

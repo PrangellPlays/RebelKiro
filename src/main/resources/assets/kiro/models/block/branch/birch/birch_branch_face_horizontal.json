@@ -1,0 +1,6 @@
+{
+  "parent": "kiro:block/branch_face_horizontal_template",
+  "textures": {
+    "side": "minecraft:block/birch_log"
+  }
+}

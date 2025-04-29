@@ -1,0 +1,7 @@
+{
+  "parent": "kiro:block/branch_top_template",
+  "textures": {
+    "top": "kiro:block/branch/warped/stripped_warped_branch_top",
+    "side": "minecraft:block/stripped_warped_stem"
+  }
+}

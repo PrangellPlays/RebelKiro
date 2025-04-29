@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "kiro:oak_hollow_log",
+    "kiro:stripped_oak_hollow_log",
+    "kiro:spruce_hollow_log",
+    "kiro:stripped_spruce_hollow_log",
+    "kiro:birch_hollow_log",
+    "kiro:stripped_birch_hollow_log",
+    "kiro:jungle_hollow_log",
+    "kiro:stripped_jungle_hollow_log",
+    "kiro:acacia_hollow_log",
+    "kiro:stripped_acacia_hollow_log",
+    "kiro:dark_oak_hollow_log",
+    "kiro:stripped_dark_oak_hollow_log",
+    "kiro:crimson_hollow_stem",
+    "kiro:stripped_crimson_hollow_stem",
+    "kiro:warped_hollow_stem",
+    "kiro:stripped_warped_hollow_stem",
+    "kiro:mangrove_hollow_log",
+    "kiro:stripped_mangrove_hollow_log",
+    "kiro:cherry_hollow_log",
+    "kiro:stripped_cherry_hollow_log"
+  ]
+}

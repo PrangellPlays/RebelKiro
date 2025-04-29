@@ -1,0 +1,7 @@
+{
+  "parent": "kiro:block/branch_inventory_template",
+  "textures": {
+    "top": "kiro:block/branch/dark_oak/dark_oak_branch_top",
+    "side": "minecraft:block/dark_oak_log"
+  }
+}

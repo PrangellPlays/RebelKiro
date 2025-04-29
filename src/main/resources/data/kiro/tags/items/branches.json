@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "kiro:crimson_branch",
+    "kiro:warped_branch",
+    "kiro:stripped_crimson_branch",
+    "kiro:stripped_warped_branch",
+    "#kiro:branches_that_burn"
+  ]
+}

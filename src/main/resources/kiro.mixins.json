@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "package": "dev.luminaeclipse.kiro.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "server.EntityStepsSound",
+    "server.LivingEntityEdits",
+    "server.SculkSensorEdits",
+    "server.SculkShriekerEdits",
+    "server.VibrationAcceptorEdits"
+  ],
+  "client": [
+    "client.HandledScreenMixin",
+    "client.InGameHudMixin",
+    "client.accessor.RenderSystemAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

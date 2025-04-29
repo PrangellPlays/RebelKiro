@@ -1,7 +1,0 @@
-{
-  "parent": "rl:block/template_glass_panel",
-  "textures": {
-    "panelEdge": "rl:block/glass_panel_trim",
-    "panel": "rl:block/glass_panel"
-  }
-}

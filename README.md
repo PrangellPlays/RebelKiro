@@ -1,5 +1,5 @@
-# Rebel Legacy: Kiro
-Rebel Legacy Modded server. Based in the Kiro Universe. The center.
+# Kiro
+Kiro Modded server. Based in the Kiro Universe. The center.
 
 Includes:
 - Kiro Shards: Kiro, Rebel SMP, Void, Rebel Legacy, Vault 0, Aetheris

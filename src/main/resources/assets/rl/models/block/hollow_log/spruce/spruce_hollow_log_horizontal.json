@@ -1,8 +1,0 @@
-{
-  "parent": "rl:block/hollow_log_horizontal_template",
-  "textures": {
-    "end": "minecraft:block/spruce_log_top",
-    "inside": "minecraft:block/stripped_spruce_log",
-    "side": "minecraft:block/spruce_log"
-  }
-}

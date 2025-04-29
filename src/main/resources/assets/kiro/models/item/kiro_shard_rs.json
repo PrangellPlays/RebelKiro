@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kiro:item/kiro_shard/kiro_shard_rs"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "kiro:fractured_kiro_shard_rs": 1
+      },
+      "model": "kiro:item/fractured_kiro_shard_rs"
+    }
+  ]
+}
